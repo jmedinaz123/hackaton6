@@ -1,0 +1,99 @@
+$Fuente1: "Arial", sans-serif;
+$Fuente2: "Helvetica", sans-serif;
+$color1: #ffffff;
+$color2: #1f3f68;
+$color3: #356ead;
+$color4: rgba(0, 0, 0, 0.6);
+$color5: #316099;
+$color6: #5a98d0;
+$color7: #f4f4f4;
+
+@mixin article-encabezado {
+  font-family: $Fuente2;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.04rem;
+  color: $color3;
+  opacity: 0.8;
+}
+
+@mixin description($size, $lineHeight) {
+  font-family: $Fuente1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $size;
+  line-height: $lineHeight;
+  letter-spacing: 0.04rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@mixin heading($size, $lineHeight) {
+  font-family: $Fuente2;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $size;
+  line-height: $lineHeight;
+  letter-spacing: 0.04rem;
+  color: $color2;
+}
+
+@mixin autor {
+  font-family: $Fuente2;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+  color: $color2;
+}
+
+@mixin fecha {
+  font-family: $Fuente1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+  color: $color2;
+  opacity: 0.4;
+}
+
+@mixin postFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 0 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.autor {
+  @include autor;
+}
+
+.fecha {
+  @include fecha;
+}
+
+i {
+  color: #356ead;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+hr {
+  width: 940px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+}

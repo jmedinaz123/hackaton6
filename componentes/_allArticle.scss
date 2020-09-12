@@ -1,0 +1,56 @@
+.allArticle {
+  width: 941px;
+  margin: 0 auto;
+}
+
+.allArticle__encabezado {
+  @include article-encabezado;
+}
+
+.article {
+  display: flex;
+  margin-bottom: 32px;
+
+  &__letras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 22px;
+  }
+
+  &__heading {
+    @include heading(18px, 28px);
+  }
+
+  &__description {
+    @include description(14px, 24px);
+  }
+
+  &__final {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.postNavigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+  margin-bottom: 98px;
+
+  &__post {
+    font-family: $Fuente1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: $color3;
+    display: flex;
+    cursor: pointer;
+
+    i {
+      margin-right: 20px;
+    }
+  }
+}

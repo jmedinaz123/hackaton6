@@ -1,0 +1,26 @@
+.search {
+  display: flex;
+  width: 940px;
+  height: 56px;
+  margin: 0 auto;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  padding: 20px;
+  border-radius: 10px;
+  background: $color7;
+
+  & i {
+    margin-right: 30px;
+    color: $color2;
+  }
+
+  &__input {
+    width: inherit;
+    height: 18px;
+    border: none;
+    outline: none;
+    color: $color2;
+    opacity: 0.6;
+    background: $color7;
+  }
+}

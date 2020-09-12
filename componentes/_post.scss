@@ -1,0 +1,67 @@
+.popular {
+  margin: 0 auto;
+  width: 941px;
+}
+
+.popular__encabezado {
+  margin-bottom: 34px;
+  @include article-encabezado;
+}
+
+.popular__container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 380px 477px;
+  grid-gap: 20px;
+}
+
+.post1 {
+  display: flex;
+  flex-direction: row-reverse;
+  grid-column: 1/4;
+
+  &__letras {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__heading {
+    @include heading(36px, 46px);
+  }
+
+  &__description {
+    @include description(16px, 26px);
+    padding-right: 20px;
+  }
+
+  .postFooter {
+    @include postFooter;
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__heading {
+    margin-top: -13px;
+    @include heading(22px, 32px);
+  }
+
+  &__description {
+    @include description(16px, 26px);
+  }
+
+  .postFooter {
+    @include postFooter;
+  }
+}
+
+.bottom-title {
+  margin: 60px 0 26px 0;
+  text-align: right;
+  @include article-encabezado;
+}
